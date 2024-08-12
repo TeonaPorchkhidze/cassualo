@@ -1,0 +1,101 @@
+/* Container for the components */
+.comp-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom:50px;
+}
+
+/* Styling for each section with image and text */
+.article {
+    display: flex;
+    flex-direction: row; /* Align items side by side */
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Reverse the order of image and text if needed */
+.article.reverse {
+    flex-direction: row-reverse; /* Reverse image and text order */
+}
+
+/* Image styling */
+.article img {
+    width: 100%;
+    max-width: 500px; /* Increased image size */
+    height: auto;
+    border-radius: 20px;
+    margin-right: 60px;
+    margin-left: 20px;
+}
+
+/* Text content styling */
+.text-content {
+    max-width: 600px; /* Space for text */
+    padding: 20px;
+}
+
+.text-content h2 {
+    font-weight: 900;
+    font-size: 2.5rem; /* Adjusted headline size for better readability */
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: 20px; /* Space below headline */
+}
+
+.text-content p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 30px; /* Space between text and button */
+}
+
+/* Responsive styling for tablets and mobile devices */
+@media (max-width: 1024px) {
+    .article {
+        flex-direction: column;
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .article.reverse {
+        flex-direction: column;
+    }
+
+    .article img {
+        max-width: 90%; /* Ensure images fit within tablets */
+        margin: 20px 0; /* Adjust margin for tablets */
+    }
+
+    .text-content {
+        max-width: 90%; /* Adjust text width */
+        padding: 20px;
+    }
+
+    .text-content h2 {
+        font-size: 2rem; /* Slightly smaller headline for tablets */
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .article.reverse {
+        flex-direction: column;
+    }
+
+}

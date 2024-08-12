@@ -1,0 +1,97 @@
+/* Container for the component */
+.comp-4 {
+    background-color: orangered;
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper for content alignment */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  
+}
+
+/* Business text styling */
+.text-business {
+    color: #FFFADA;
+    text-align: center; /* Center text on smaller screens */
+    margin-bottom: 20px;
+}
+
+.text-business h2 {
+    font-weight: 900;
+    font-size: 2.5rem; /* Default size for large screens */
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.offer {
+    font-size: 1.1rem;
+}
+
+.offer h3 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+
+.offer h3 span {
+    font-weight: bold;
+}
+
+
+/* Responsive styling for tablets and larger screens */
+@media (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .text-business {
+        text-align: left;
+        margin-right: 40px;
+    }
+
+    .text-business h2 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .offer h3 {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-business {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .text-business h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .offer h3 {
+        font-size: 1.25rem;
+    }
+
+}
+
